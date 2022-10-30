@@ -15,3 +15,11 @@ $fontFamily: 'Source Sans Pro', sans-serif;
 *::after {
   box-sizing: border-box;
 }
+
+.active {
+  opacity: 100%;
+}
+
+.container {
+  opacity: 0%;
+}
