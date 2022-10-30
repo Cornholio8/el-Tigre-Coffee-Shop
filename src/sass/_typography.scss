@@ -1,0 +1,51 @@
+$color-main: #BEA67C;
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.title{
+    text-align: center;
+    position: relative;
+    color: $color-main;
+    letter-spacing: 10px;
+    font-family: $fontFamily;
+    font-weight: bold;
+    margin: 65px 0;
+    font-size: 25px;
+    z-index: 99;
+}
+
+.title::after {
+    position: absolute;
+    content: '';
+    bottom: 10px;
+    left: 50%;
+    width: 650px;
+    height: 3px;
+    transform: translateX(-50%);
+    background: $color-main;
+    border-radius: 5px;
+}
+
+.product-title h1 {
+    font-family: $fontFamily;
+    font-weight: bold;
+    color: $color-dark;
+    font-size: 30px;
+    letter-spacing: 4px;
+    position: relative;
+    margin-bottom: 0;
+  }
+  
+  .product-title h1::after {
+    position: absolute;
+    content: '';
+    bottom: -35px;
+    left: 10%;
+    width: 100px;
+    height: 3px;
+    transform: translateX(-50%);
+    background: $color-main;
+    border-radius: 5px;
+  }

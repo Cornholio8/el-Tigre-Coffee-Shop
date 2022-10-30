@@ -1,3 +1,6 @@
+// variables
+@import "variables";
+
 // normalize default styles
 @import "normalize";
 
@@ -8,12 +11,15 @@
 @import "bootstrap/utilities";
 @import "bootstrap/grid";
 
-// variables
-@import "variables";
-
 // common styles
 @import "layout";
 @import "global";
 @import "typography";
 
 @import "icons";
+
+@import "pages/_header.scss";
+@import "pages/_contact.scss";
+@import "pages/_products.scss";
+@import "pages/_about.scss";
+//@import "pages/_home.scss";

@@ -1,0 +1,41 @@
+
+.contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    font-family: $fontFamily;
+
+    .form{
+        text-align: center;
+        margin-top: 50px;
+
+        label{
+            letter-spacing: 3px;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+
+        input{
+            width: 280px;
+            border: 2px solid $color-dark;
+            margin: 10px 0;
+        }
+
+        button{
+            margin: 10px 0;
+            padding: 15px 25px;
+            letter-spacing: 3px;
+            background: $color-main;
+            border: none;
+            color: $color-light;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .text-area{
+            height: 100px;
+        }
+    }
+}
