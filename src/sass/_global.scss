@@ -1,0 +1,28 @@
+/*footer h4 {
+  font-family: $fontRegular;
+  text-align: center;
+  padding-bottom: 34px;
+  color: #000;
+  font-size: 15px;
+  font-weight: 600;
+}*/@at-root
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-size: 16px;
+}
+.container {
+  max-width: 1140px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+#pages > section {
+  display: none;
+}
+
+#pages > section.active {
+  display: block;
+}

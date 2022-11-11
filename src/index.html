@@ -13,7 +13,7 @@
 
 <body>
     <header class="header">
-        <div class="container-header">
+        <div class="container">
             <div class="header-title col-5">
                 <h1>EL TIGRE</h1>
                 <h3>VENEZUELA COFFEE BEANS</h3>
@@ -36,102 +36,79 @@
 
     <!--pages-->
     <div id="pages">
-        <section id="home" class="container">
-          <div id="home-wrapper" class="home-wrapper clear"></div>
+        <section id="home" class="active">
+            <div id="home-wrapper" class="home-wrapper"></div>
         </section>
-        <section id="products" class="container">
-          <div id="products-list" class="product-list wrapper"></div>
+        <section id="products">
+          <div id="products-list" class="products-list"></div>
         </section>
-        <section id="contact" class="container">
-          <div id="contact-wrapper" class="contact-wrapper wrapper"></div>
+        <section id="contact">
+          <div id="contact-wrapper" class="contact-wrapper"></div>
         </section>
     </div>
 
     <!--products-->
     <script id="template-products-page" type="text/x-handlebars-template">
-        <div class="products">
-            <div class="title col-12">
+        <div class="products container">
+            <div class="page-title col-12">
                 <h1>PRODUCTS</h1>
             </div>
             <div class="product-list col-8">
                 <div class="product col-6">
                     <div class="product-title col-12">
-                        <h1>01. {{ coffee-1.name }}</h1>
+                        <h1>01. {{name1}}</h1>
                     </div>
                     <div class="product-info col-9">
-                        <p>{{ coffee-1.description }}</p>
+                        <p>{{description1}}</p>
                     </div>
                     <div class="product-rating col-7">
-                        <h2>ROASTING: <span class="rating">{{ coffee-1.roasting }}</span></h2>
-                        <h2>INTENSITY: <span class="rating">{{ coffee-1.intensity }}</span></h2>
+                        <h2>ROASTING: <span class="rating">{{roasting1}}</span></h2>
+                        <h2>INTENSITY: <span class="rating">{{intensity1}}</span></h2>
                     </div>
                     <div class="popular col-5">
-                        <img src={{ coffee-1.popular }} alt="foto">
+                        <img src="{{popular}}" alt="foto">
                     </div>
                 </div>
                 <div class="foto col-6">
-                    <img src={{ coffee-1.image }} alt="foto">
+                    <img src="{{image1}}" alt="foto">
                 </div>
                 <div class="foto col-6">
-                    <img src={{ coffee-2.image }} alt="foto">
+                    <img src="{{image2}}" alt="foto">
                 </div>
                 <div class="product col-6">
                     <div class="product-title col-12">
-                        <h1>02. {{ coffee-2.name }}</h1>
+                        <h1>02. {{name2}}</h1>
                     </div>
                     <div class="product-info col-9">
-                        <p>{{ coffee-2.description }}</p>
+                        <p>{{description2}}</p>
                     </div>
                     <div class="product-rating col-12">
-                        <h2>ROASTING: <span class="rating">{{ coffee-2.roasting }}</span></h2>
-                        <h2>INTENSITY: <span class="rating">{{ coffee-2.intensity }}</span></h2>
+                        <h2>ROASTING: <span class="rating">{{roasting2}}</span></h2>
+                        <h2>INTENSITY: <span class="rating">{{intensity2}}</span></h2>
                     </div>
                 </div>
                 <div class="product col-6">
                     <div class="product-title col-12">
-                        <h1>03. {{ coffee-3.name }}</h1>
+                        <h1>03. {{name3}}</h1>
                     </div>
                     <div class="product-info col-9">
-                        <p>{{ coffee-3.description }}</p>
+                        <p>{{description3}}</p>
                     </div>
                     <div class="product-rating col-12">
-                        <h2>ROASTING: <span class="rating">{{ coffee-3.roasting }}</span></h2>
-                        <h2>INTENSITY: <span class="rating">{{ coffee-3.intensity }}</span></h2>
+                        <h2>ROASTING: <span class="rating">{{roasting3}}</span></h2>
+                        <h2>INTENSITY: <span class="rating">{{intensity3}}</span></h2>
                     </div>
                 </div>
                 <div class="foto col-6">
-                    <img src={{ coffee-3.image }} alt="foto">
+                    <img src="{{image3}}" alt="foto">
                 </div>
             </div>
         </div>
     </script>
 
-    <!--about-->
-    <div class="about">
-        <div class="title col-12">
-            <h1>ABOUT US</h1>
-        </div>
-        <div class="flex">
-            <div class="about-text col-6">
-                <p>
-                    Who are we? Just a bunch of friends with<br>
-                    a love for a good coffee and desire to create<br>
-                    something new, something original.
-                </p>
-                <p>
-                    Our coffees reflect us - young, wild and free. <br>
-                    We are on the journey of new tastes...
-                </p>
-            </div>
-            <div class="join col-7">
-                <p>Join Us!</p>
-            </div>
-        </div>
-    </div>
-
     <!--contact-->
-    <div>
-        <div class="contact">
+    <script id="template-contact-page" type="text/x-handlebars-template">
+        <div class="contact container">
             <div class="title col-12">
                 <h1>CONTACT US</h1>
             </div>
@@ -145,10 +122,36 @@
                 <button type="submit" value="submit">SUBMIT</button>
             </div>
         </div>
-    </div>
+    </script>
 
-    <!--products 2-->
-    <div></div>
+    <!--about-->
+    <script id="template-home-page" type="text/x-handlebars-template">
+        <div class="home">
+            <div class="about-page-title col-12">
+                <h1>ABOUT US</h1>
+            </div>
+            <div class="flex">
+                <div class="about-text col-6">
+                    <p>
+                        Who are we? Just a bunch of friends with<br>
+                        a love for a good coffee and desire to create<br>
+                        something new, something original.
+                    </p>
+                    <p>
+                        Our coffees reflect us - young, wild and free. <br>
+                        We are on the journey of new tastes...
+                    </p>
+                </div>
+                <div class="join col-7">
+                    <p>Join Us!</p>
+                </div>
+            </div>
+        </div>
+    </script>
+
+    <footer class="footer">
+        <h4>2022 EL TIGRE inc.</h4>
+    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
     <script src="js/script.js" type="module"></script>

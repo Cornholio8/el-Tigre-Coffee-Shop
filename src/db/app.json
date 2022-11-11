@@ -1,38 +1,32 @@
 {
-    "products":[
+    "products": [
     {
-       "coffee-1": {
-       "name": "LA LAGARTIJA",
-       "description": "Mysterious and treacherous... The best choice for he start of your journey! It will procide you a rich delicious flavor.",
-       "image": [
+       "name1": "LA LAGARTIJA",
+       "description1": "Mysterious and treacherous... The best choice for he start of your journey! It will procide you a rich delicious flavor.",
+       "image1": [
           "/images/coffee-1.png"
        ],
        "popular": [
           "/images/most-popular.png"
        ],
-       "roasting": "5/10",
-       "intensity": "6/10"
-    },
+       "roasting1": "5/10",
+       "intensity1": "6/10",
 
-     "coffee-2": {
-     "name":"EL TIGRE",
-     "description":"Really dark coffe, only for the real gourmets. It has bitter flavor of grapefruits and is mixed with a little bit of peanuts with caramel.",
-     "image":[
+     "name2": "EL TIGRE",
+     "description2": "Really dark coffee, only for the real gourments. It has bitter flavor of grapefruits and is mixed with a little bit of peanuts with caramel.",
+     "image2": [
          "/images/coffee-2.png"
       ],
-     "roasting":"8/10",
-     "intensity":"9/10"
-     },
+     "roasting2": "8/10",
+     "intensity2": "9/10",
      
-     "coffee-3": {
-     "name":"LA CUCARACHA",
-     "description":"Sweet and intense with a big amount of different flavors. Caramel, grapes, strawberry, you name it! It's great choice for warm summer days.",
-     "image":[
+     "name3": "LA CUCARACHA",
+     "description3": "Sweet and intense with a big amount of different flavors. Caramel, grapes, strawberry, you name it! It's great choice for warm summer days.",
+     "image3": [
          "/images/coffee-3.png"
          ],
-     "roasting":"3/10",
-     "intensity":"7/10"
-     }
+     "roasting3": "3/10",
+     "intensity3": "7/10"
     }
- ]
+   ]
 } 

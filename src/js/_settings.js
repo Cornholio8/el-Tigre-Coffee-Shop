@@ -1,27 +1,27 @@
 export const settings = {
   db: {
-    url: '//localhost:3131',
+    url: '//' + window.location.hostname + (window.location.hostname=='localhost' ? ':3131' : ''),
     products: 'products',
   },
 };
 
 export const select = {
   templateOf: {
-    about: '#template-about-page',
-    product: '#template-products-page',
-    contact: '#template-contact-page',
+    homePage: '#template-home-page',
+    menuProduct: '#template-products-page',
+    contactPage: '#template-contact-page',
   },
 
   containerOf: {
     home: '#home-wrapper',
     products: '#products-list',
     contact: '#contact-wrapper',
-    pages: '#pages',
+    pages: '#home, #products, #contact',
   },
 
   nav: {
     links: '.header-nav a',
-  }
+  },
 };
 
 export const className = {
@@ -29,5 +29,8 @@ export const className = {
 };
 
 export const templates = {
-  product: Handlebars.compile(document.querySelector(select.templateOf.product).innerHTML)
+  homePage: Handlebars.compile(document.querySelector(select.templateOf.homePage).innerHTML),
+  menuProduct: Handlebars.compile(document.querySelector(select.templateOf.menuProduct).innerHTML),
+  contactPage: Handlebars.compile(document.querySelector(select.templateOf.contactPage).innerHTML),
+  products: Handlebars.compile(document.querySelector(select.containerOf.products).innerHTML),
 };
