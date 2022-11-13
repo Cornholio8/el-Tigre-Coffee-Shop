@@ -1,6 +1,6 @@
 import {templates, select} from '../settings.js';
 
-class Home {
+class home {
   constructor(element){
     const thisHome = this;
 
@@ -20,4 +20,4 @@ class Home {
   }
 }
 
-export default Home;
+export default home;

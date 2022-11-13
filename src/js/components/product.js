@@ -1,6 +1,6 @@
 import {select} from '../settings.js';
 
-class Product {
+class product {
   constructor(element){
     const thisProducts = this;
 
@@ -46,4 +46,4 @@ class Product {
   }
 }
 
-export default Product;
+export default product;

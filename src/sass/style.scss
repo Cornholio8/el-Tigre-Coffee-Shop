@@ -10,9 +10,10 @@
 @import "bootstrap/mixins";
 @import "bootstrap/utilities";
 @import "bootstrap/grid";
+@import "bootstrap/images";
 
 // common styles
-@import "layout";
+//@import "layout";
 @import "global";
 @import "typography";
 
@@ -22,4 +23,3 @@
 @import "pages/_contact.scss";
 @import "pages/_products.scss";
 @import "pages/_about.scss";
-//@import "pages/_home.scss";

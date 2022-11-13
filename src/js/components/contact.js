@@ -1,6 +1,6 @@
 import {templates, select} from '../settings.js';
 
-class Contact {
+class contact {
   constructor(element){
     const thisContact = this;
 
@@ -20,4 +20,4 @@ class Contact {
   }
 }
 
-export default Contact;
+export default contact;

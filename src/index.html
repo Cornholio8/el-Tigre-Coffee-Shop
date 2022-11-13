@@ -14,14 +14,16 @@
 <body>
     <header class="header">
         <div class="container">
-            <div class="header-title col-5">
-                <h1>EL TIGRE</h1>
-                <h3>VENEZUELA COFFEE BEANS</h3>
-            </div>
-            <div class="header-nav col-5">
-                <a href="#home">HOME</a>
-                <a href="#products">PRODUCTS</a>
-                <a href="#contact">CONTACT</a>
+            <div class="row">
+                <div class="header-title col-5">
+                    <h1>EL TIGRE</h1>
+                    <h3>VENEZUELA COFFEE BEANS</h3>
+                </div>
+                <div class="header-nav col-5">
+                    <a href="#home">HOME</a>
+                    <a href="#products">PRODUCTS</a>
+                    <a href="#contact">CONTACT</a>
+                </div>
             </div>
             <div id="header-sub-title" class="header-sub-title col-12">
                 <h1 class="sub-title-1">HOME OF</h1>
@@ -54,53 +56,59 @@
                 <h1>PRODUCTS</h1>
             </div>
             <div class="product-list col-8">
-                <div class="product col-6">
-                    <div class="product-title col-12">
-                        <h1>01. {{name1}}</h1>
+                <div class="row">
+                    <div class="product col-6">
+                        <div class="product-title col-12">
+                            <h1>01. {{name1}}</h1>
+                        </div>
+                        <div class="product-info col-9">
+                            <p>{{description1}}</p>
+                        </div>
+                        <div class="product-rating col-7">
+                            <h2>ROASTING: <span class="rating">{{roasting1}}</span></h2>
+                            <h2>INTENSITY: <span class="rating">{{intensity1}}</span></h2>
+                        </div>
+                        <div class="popular col-5">
+                            <img src="{{popular}}" alt="foto">
+                        </div>
                     </div>
-                    <div class="product-info col-9">
-                        <p>{{description1}}</p>
-                    </div>
-                    <div class="product-rating col-7">
-                        <h2>ROASTING: <span class="rating">{{roasting1}}</span></h2>
-                        <h2>INTENSITY: <span class="rating">{{intensity1}}</span></h2>
-                    </div>
-                    <div class="popular col-5">
-                        <img src="{{popular}}" alt="foto">
-                    </div>
-                </div>
-                <div class="foto col-6">
-                    <img src="{{image1}}" alt="foto">
-                </div>
-                <div class="foto col-6">
-                    <img src="{{image2}}" alt="foto">
-                </div>
-                <div class="product col-6">
-                    <div class="product-title col-12">
-                        <h1>02. {{name2}}</h1>
-                    </div>
-                    <div class="product-info col-9">
-                        <p>{{description2}}</p>
-                    </div>
-                    <div class="product-rating col-12">
-                        <h2>ROASTING: <span class="rating">{{roasting2}}</span></h2>
-                        <h2>INTENSITY: <span class="rating">{{intensity2}}</span></h2>
+                    <div class="foto col-6">
+                        <img src="{{image1}}" alt="foto">
                     </div>
                 </div>
-                <div class="product col-6">
-                    <div class="product-title col-12">
-                        <h1>03. {{name3}}</h1>
+                <div class="row">
+                    <div class="foto col-6">
+                        <img src="{{image2}}" alt="foto">
                     </div>
-                    <div class="product-info col-9">
-                        <p>{{description3}}</p>
-                    </div>
-                    <div class="product-rating col-12">
-                        <h2>ROASTING: <span class="rating">{{roasting3}}</span></h2>
-                        <h2>INTENSITY: <span class="rating">{{intensity3}}</span></h2>
+                    <div class="product col-6">
+                        <div class="product-title col-12">
+                            <h1>02. {{name2}}</h1>
+                        </div>
+                        <div class="product-info col-9">
+                            <p>{{description2}}</p>
+                        </div>
+                        <div class="product-rating col-12">
+                            <h2>ROASTING: <span class="rating">{{roasting2}}</span></h2>
+                            <h2>INTENSITY: <span class="rating">{{intensity2}}</span></h2>
+                        </div>
                     </div>
                 </div>
-                <div class="foto col-6">
-                    <img src="{{image3}}" alt="foto">
+                <div class="row">
+                    <div class="product col-6">
+                        <div class="product-title col-12">
+                            <h1>03. {{name3}}</h1>
+                        </div>
+                        <div class="product-info col-9">
+                            <p>{{description3}}</p>
+                        </div>
+                        <div class="product-rating col-12">
+                            <h2>ROASTING: <span class="rating">{{roasting3}}</span></h2>
+                            <h2>INTENSITY: <span class="rating">{{intensity3}}</span></h2>
+                        </div>
+                    </div>
+                    <div class="foto col-6">
+                        <img src="{{image3}}" alt="foto">
+                    </div>
                 </div>
             </div>
         </div>
@@ -109,17 +117,19 @@
     <!--contact-->
     <script id="template-contact-page" type="text/x-handlebars-template">
         <div class="contact container">
-            <div class="title col-12">
-                <h1>CONTACT US</h1>
-            </div>
-            <div class="form col-12">
-                <label for="name">NAME</label><br>
-                <input type="text" id="name" name="name"><br>
-                <label for="title">TITLE</label><br>
-                <input type="text" id="title" name="title"><br>
-                <label for="message">MESSAGE</label><br>
-                <input class="text-area" type="text" id="message" name="message"><br>
-                <button type="submit" value="submit">SUBMIT</button>
+            <div class="row">
+                <div class="title col-12">
+                    <h1>CONTACT US</h1>
+                </div>
+                <div class="form col-12">
+                    <label for="name">NAME</label><br>
+                    <input type="text" id="name" name="name"><br>
+                    <label for="title">TITLE</label><br>
+                    <input type="text" id="title" name="title"><br>
+                    <label for="message">MESSAGE</label><br>
+                    <input class="text-area" type="text" id="message" name="message"><br>
+                    <button type="submit" value="submit">SUBMIT</button>
+                </div>
             </div>
         </div>
     </script>
@@ -127,30 +137,38 @@
     <!--about-->
     <script id="template-home-page" type="text/x-handlebars-template">
         <div class="home">
-            <div class="about-page-title col-12">
-                <h1>ABOUT US</h1>
-            </div>
-            <div class="flex">
-                <div class="about-text col-6">
-                    <p>
-                        Who are we? Just a bunch of friends with<br>
-                        a love for a good coffee and desire to create<br>
-                        something new, something original.
-                    </p>
-                    <p>
-                        Our coffees reflect us - young, wild and free. <br>
-                        We are on the journey of new tastes...
-                    </p>
-                </div>
-                <div class="join col-7">
-                    <p>Join Us!</p>
+            <div class="container">
+                <div class="'row">
+                    <div class="about-page-title col-12">
+                        <h1>ABOUT US</h1>
+                    </div>
+                    <div class="flex">
+                        <div class="about-text col-6">
+                            <p>
+                                Who are we? Just a bunch of friends with<br>
+                                a love for a good coffee and desire to create<br>
+                                something new, something original.
+                            </p>
+                            <p>
+                                Our coffees reflect us - young, wild and free. <br>
+                                We are on the journey of new tastes...
+                            </p>
+                        </div>
+                        <div class="join col-7">
+                            <p>Join Us!</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </script>
 
-    <footer class="footer">
-        <h4>2022 EL TIGRE inc.</h4>
+    <footer class="footer col-md-12">
+        <div class="container">
+            <div class="row">
+                <h4>2022 EL TIGRE inc.</h4>
+            </div>
+        </div>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>

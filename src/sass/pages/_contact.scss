@@ -1,45 +1,39 @@
-
-.contact{
+.contact {
   display: flex;
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-top: 50px;
-  font-family: $fontFamily;
-  position: absolute;
-  top: 150vh;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  .form{
+  font-family: $mainFont;
+  padding-bottom: 50px;
+    
+  .form {
     text-align: center;
-    margin-top: 50px;
 
-    label{
+    label {
       letter-spacing: 3px;
       margin: 10px 0;
       font-weight: bold;
     }
 
-    input{
+    input {
       width: 280px;
-      border: 2px solid $color-dark;
+      border: 2px solid $blackColor;
       margin: 10px 0;
     }
 
-    button{
+    .text-area {
+      height: 100px;
+    }
+
+    button {
       margin: 10px 0;
       padding: 15px 25px;
       letter-spacing: 3px;
-      background: $color-main;
+      background: $primaryColor;
       border: none;
-      color: $color-light;
+      color: $whiteColor;
       text-align: center;
       font-weight: bold;
-    }
-
-    .text-area{
-      height: 100px;
     }
   }
 }
